@@ -5,7 +5,11 @@ function myReplace(anImg) {
   //console.log("start fetching and decoding: " + anImg.dataset.src);
   fetch(anImg.dataset.src)
     .then((res) => res.blob())
-    .then((blob) => heic2any({ blob }))	
+    .then((blob) => heic2any({
+                      blob,
+	              toType: "image/jpeg",
+	              quality: 0.9
+                    }))	
     .then((conversionResult) => {
       // conversionResult is a BLOB
       // of the PNG formatted image
