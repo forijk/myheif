@@ -4,18 +4,38 @@
 <script src="js/myheic.js"></script>
 
 <style>
+  .zoomed-in {
+    /*
+    zoom: 1.0;
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    */
+    width: 95%;
+  }
+  
+  .zoomed-out {
+    /*
+    zoom: 0.2;
+    -moz-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    */
+    width: 240px;
+  }
+
   body {
     background-color: black;
     }
   img {
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 2px;
     border: 5px solid #fff;
-    width: 95%;
+    /*width: 95%;*/
   }
   canvas {
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -26,29 +46,17 @@
 <body>
 <!-- -->
 <br />
-<img width="90%" src="images/DSCF0193.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF3122_E.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF0980_E.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF3242.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF0535.jpg" data-src="images/DSCF0535.jpg.heic" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF1975.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF1832.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF6463.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF2025.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF0493.jpg" loading="lazy" />
-<br />
-<img width="90%" src="images/DSCF2429_E.jpg" loading="lazy" />
-<br />
-
+<!-- <img class="zoomed-out" src="images/DSCF2025.jpg"   loading="lazy" /> -->
+<img class="zoomed-out" src="images/DSCF0193.jpg"   loading="lazy" />
+<img class="zoomed-out" src="images/DSCF3122_E.jpg" loading="lazy" />
+<img class="zoomed-out" src="images/DSCF0980_E.jpg" loading="lazy" />
+<img class="zoomed-out" src="images/DSCF3242.jpg"   loading="lazy" />
+<img class="zoomed-out" src="images/DSCF0535.jpg"   data-src="images/DSCF0535.jpg.heic" loading="lazy" />
+<img class="zoomed-out" src="images/DSCF1975.jpg"   loading="lazy" />
+<img class="zoomed-out" src="images/DSCF1832.jpg"   loading="lazy" />
+<img class="zoomed-out" src="images/DSCF6463.jpg"   loading="lazy" />
+<img class="zoomed-out" src="images/DSCF0493.jpg"   loading="lazy" />
+<img class="zoomed-out" src="images/DSCF2429_E.jpg" loading="lazy" />
 <!-- -->
 </body>
 </html>
