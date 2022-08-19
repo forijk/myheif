@@ -25,16 +25,9 @@ function myReplace(anImg) {
 	    //anImg.title = "Decoded from heic/heif\nClick to open 1/1 resolution of:\n" + anImg.dataset.src;
 	    anImg.title = "Decoded from heic/heif\nClick to toggle zoom of:\n" + anImg.dataset.src;
 	    //anImg.onclick = function(e){ window.open(anImg.src, '_blank'); }
-	    anImg.onclick = function(e) {
-	                      //if ( anImg.classList.contains('zoomed-in') ) {
+	    anImg.onclick = function(e) {     
 	                        anImg.classList.toggle('zoomed-out');
 	                        anImg.classList.toggle('zoomed-in');
-	                      //}
-	                        
-	                      //if ( anImg.classList.contains('zoomed-out') ) {
-	                      //  anImg.classList.toggle('zoomed-in');
-	                      //  anImg.classList.toggle('zoomed-out');
-	                      //}
 	                    }
 	    console.log("+++ .then - fetched and decoded: " + anImg.dataset.src);
     }
