@@ -14,6 +14,7 @@ function myReplace(anImg) {
                 blob,
                 toType: "image/jpeg",
                 quality: 0.92,
+                signature: anImg.title,
               })
   )
   
